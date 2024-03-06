@@ -1,20 +1,106 @@
 <!DOCTYPE html>
-<html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
 
   {% include head.html %}
 
   <body>
-
-    {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <div class="animationload">
+      <div class="loader"></div>
     </div>
 
-    {% include footer.html %}
+    {{ content }}
 
+    <div class="style-open-form animated hi-icon-effect-8">
+        <i class="hi-icon fa fa-envelope-o ukie-icons hover-animate hi-icon-mobile"></i>
+    </div>
+    <div class="style-contact-form style-off-form">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12 ">
+                <div class="contact-form">
+                    <div class="btn-close-form">
+                    </div>
+                    <h3 class="title title-contact">Contact Me</h3>
+                    <p>Use this form to tell me about your project goals and needs. I will be in touch within 24 hours.</p>
+                    <form action="assets/php/contact.php" id="contact-form-panel" method="post">
+                        <input type="text" id="user-name-panel" name="user-name" value="" placeholder="Name" />
+                        <input type="email" id="user-email-panel" name="user-email" value="" placeholder="Email" />
+                        <input type="hidden" id="user-status-panel" name="user-status" value="1"  />
+                        <textarea id="user-message-panel" name="user-message" placeholder="Message"></textarea>
+                        <div class="footer-form">
+                            <input type="submit" id="submit-btn-panel" class="btn btn-color hover-animate"  value="Send Message" />
+                            <div class="info-message-form">
+                                <p>Please fill out all the fields!</p>
+                                <span class="close-msg"><i class="fa fa-close"></i></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="assets/boostrap-files/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.appear.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.mixitup.min.js" type="text/javascript"></script>
+    <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.inview.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.knob.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.countTo.js" type="text/javascript"></script>
+    <script src="assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript" ></script>
+    <script src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5" type="text/javascript" ></script>
+    <script src="assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5" type="text/javascript"></script>
+    <script src="assets/js/portfolio_scripts.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.ratyli.js" type="text/javascript"></script>
+    <script src="assets/js/stickUp.js" type="text/javascript"></script>
+    <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+    <script src="assets/js/prefixfree.min.js" type="text/javascript"></script>
+    <script src="assets/js/modernizr.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.calendario.js" type="text/javascript"></script>
+    <script src="assets/js/contact_scripts.js" type="text/javascript"></script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1J4h7Xqzd51GMRYG0OS8gPJpJMXC1MCE&callback=map"></script> -->
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YR9VE222P5"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-YR9VE222P5');
+    </script>
+    <script src="assets/js/instafeed.min.js"></script>
+    <script type="text/javascript">
+        // var feed = new Instafeed({
+        //     get: 'user',
+        //     userId: '3239205957',
+        //     accessToken: '8312ae8ef96d4eee8fe3ceab6df8310b',
+        //     // tagName: 'newyears',
+        //     // resolution: 'low_resolution'
+        // });
+
+        // var feed = new Instafeed({
+        //     get: 'user',
+        //     // tagName: 'aitc',
+        //     userId: '3239205957',
+        //     // clientId: 'ba6185e.8312ae8ef96d4eee8fe3ceab6df8310b',
+        //     accessToken: '3239205957.ba6185e.8312ae8ef96d4eee8fe3ceab6df8310b',
+        //     // template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+        //     template: '<div class="col-xs-6 col-sm-4 col-lg-2"><a href="{{link}}"><img class="instagram-foto" src="{{image}}" alt="Instagram Feed"></a></div>',
+        //     resolution: 'thumbnail',
+        //     limit: 18,
+        //     // filter: function(image) {
+        //     //     return image.tags.indexOf('somehashtag') >= 0;
+        //     // }
+        // });
+        // feed.run();
+      </script>
   </body>
-
 </html>
