@@ -1,23 +1,1249 @@
----
-layout: default
----
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html lang="en"> <!--<![endif]-->
 
-<div class="home">
+<head>
+    <meta charset="utf-8" />
+    <title>Febri Ahmad Nurhidayat</title>
+    <meta name="author" content="febri ahmad nurhidayat" />
+    <meta name="keywords" content="febri, ahmad, nurhidayat, febri ahmad, febri ahmad nurhidayat, mr fan, css3, template, html5 template, profile" />
+    <meta name="description" content="Febri Ahmad Nurhidayat - My Profile" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <!-- Font Awesome -->
+    <link type="text/css" media="all" href="assets/fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <!-- Libs CSS -->
+    <link type="text/css" media="all" href="assets/boostrap-files/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Optionally add helpers - button and/or media -->
+    <link rel="stylesheet" href="assets/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <!-- Add fancyBox main CSS files -->
+    <link rel="stylesheet" type="text/css" href="assets/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <!-- Important Owl stylesheet -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/slider.css">
+    <!-- Default Theme -->
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <!-- Animate CSS -->
+    <link type="text/css" media="all" href="assets/css/animate.css" rel="stylesheet" />
+    <!-- Template CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/calendar.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/stickup.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/component.css" />
+    <link type="text/css" media="all" href="assets/css/contact.form.css" rel="stylesheet" />
+    <link type="text/css" media="all" href="assets/css/style.css" rel="stylesheet" />
+    <!-- Switcher CSS -->
+    <link type="text/css" media="all" href="assets/css/switcher.css" rel="stylesheet" />
+    <link href="assets/css/colour-scheme/color-blue.css" rel="stylesheet" type="text/css" data-color="color-blue" media="all" id="stylesheet-new">
+    <!-- Responsive CSS -->
+    <link type="text/css" media="all" href="assets/css/respons.css" rel="stylesheet" />
+   <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" href="assets/img/favicons/apple-touch-icon.png" />
+    <link rel="shortcut icon" href="assets/img/febriahmadnurhidayat.png" />
+    <!-- Google Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200,200italic,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic' rel='stylesheet' type='text/css'>
 
-  <h1 class="page-heading">Posts</h1>
+</head>
+<body>
+    <div class="animationload">
+        <div class="loader"></div>
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <div class="navbar-wrapper" role="navigation">
+        <div class="container navigation-top">
+            <div class="navwrapper">
+                <div class="navbar navbar-inverse navbar-static-top">
+                    <div class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class="menuItem active"><a href="#navhome">Home</a></li>
+                            <li class="menuItem"><a href="#navprofile">Profile</a></li>
+                            <li class="menuItem"><a href="#navresume">Resume</a></li>
+                            <li class="menuItem"><a href="#navportfolio">Portfolio</a></li>
+                            <!-- <li class="menuItem"><a href="#navblog">Blog</a></li> -->
+                            <li class="menuItem"><a href="#navcontact">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+    <div id='contents' class="contents">
+        <div id="wraper" class="wraper-card">
+            <section id="navhome">
+                <section class="home-header border-bottom padding-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-lg-5 text-center border-right">
+                                <div class="foto">
+                                    <img src="./assets/img/febriahmadnurhidayat.png" alt="Febri Ahmad Nurhidayat">
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-lg-7 text-center">
+                                <h2 class="title">Febri Ahmad Nurhidayat</h2>
+                                <h3 class="sub-title">Full Stack Developer <br>(Web Developer & Designer, Mobile Developer)</h3>
+                                <div class="social">
+                                    <ul class="animated" data-animation="fadeIn" data-animation-delay="600">
+                                        <li><a class="ukie-icons hover-animate" href="https://www.facebook.com/febriahmadnurhidayat" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                        <li><a class="ukie-icons hover-animate" href="https://twitter.com/febriahmadn" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                        <!-- <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-linkedin"></i></a></li> -->
+                                        <li><a class="ukie-icons hover-animate" href="https://plus.google.com/u/0/105994498945436033011" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a class="ukie-icons hover-animate" href="https://www.instagram.com/febriahmadnurhidayat/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                                        <!-- <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-dribbble"></i></a></li>
+                                        <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-youtube"></i></a></li> -->
+                                        <!--
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-behance"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-pinterest"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-digg"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-deviantart"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-envelope-square"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-delicious"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-instagram"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-dropbox"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-skype"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-tumblr"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-vimeo-square"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-flickr"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-github-alt"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-renren"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-vk"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-xing"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-weibo"></i></a></li>
+                                            <li><a class="ukie-icons hover-animate" href="#"><i class="fa fa-rss"></i></a></li>
+                                        -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+                <nav class="menu-style1" id="menu">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <a href="#navprofile" class="menu-li">
+                                    <span class="foto">
+                                        <img src="./assets/img/menu/style1/profile.png" class="menu-img" data-img-name="profile" alt="Febri Ahmad Nurhidayat">
+                                    </span>
+                                    <span class="name">Profile</span>
+                                </a>
 
-</div>
+                                <a href="#navresume" class="menu-li">
+                                    <span class="foto">
+                                        <img src="./assets/img/menu/style1/resume.png" class="menu-img" data-img-name="resume" alt="Febri Ahmad Nurhidayat">
+                                    </span>
+                                    <span class="name">Resume</span>
+                                </a>
+
+                                <a href="#navportfolio" class="menu-li">
+                                    <span class="foto">
+                                        <img src="./assets/img/menu/style1/portfolio.png" class="menu-img" data-img-name="portfolio" alt="Febri Ahmad Nurhidayat">
+                                    </span>
+                                    <span class="name">Portfolio</span>
+                                </a>
+
+                                <!-- <a href="#navblog" class="menu-li">
+                                    <span class="foto">
+                                        <img src="./assets/img/menu/style1/blog.png" class="menu-img" data-img-name="blog" alt="Febri Ahmad Nurhidayat">
+                                    </span>
+                                    <span class="name">Blog</span>
+                                </a> -->
+
+                                <a href="#navcontact" class="menu-li">
+                                    <span class="foto">
+                                        <img src="./assets/img/menu/style1/contact.png" class="menu-img" data-img-name="contact" alt="Febri Ahmad Nurhidayat">
+                                    </span>
+                                    <span class="name">Contact</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </section>
+
+            <div class="profile" id="navprofile">
+                <header class="head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
+                                <img style="border-radius: 50%; width: 75px;" class="logo-page" src="./assets/img/febriahmadnurhidayat.png" alt="Febri Ahmad Nurhidayat">
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-lg-7">
+                                <h2 class="title">Profile</h2>
+                                <h4 class="sub-title">Tentang Saya</h4>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="content border-bottom padding-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-7 padding-bottom">
+                                <h3 class="title">Hello, Saya Full Stack Developer</h3>
+                                <p>Saya suka pemrogramman sejak saya duduk dibangku SMP (Sekolah Menengah Keatas), pada awalnya saya sangat penasaran bagaimana pembuatan website, aplikasi mobile, atau bahkan sebuah game pc. Saya bermimpi suatu saat saya akan jadi pembuat program komputer. Saya suka programming karena itu saya suka hal-hal yang baru dalam bidang Teknologi.</p>
+                                    <!-- <a href="#" class="btn hover-animate">Hire me Now</a><a href="#" class="btn btn-color hover-animate">Download CV</a> -->
+                                </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-lg-5">
+                                <div class="block-grey">
+                                    <table>
+                                        <tr>
+                                            <td class="font-weight-m">Nama</td>
+                                            <td class="text-right">Febri Ahmad Nurhidayat</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-weight-m">Tanggal Lahir</td>
+                                            <td class="text-right">15 Februari 1997</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-weight-m">E-mail</td>
+                                            <td class="text-right"><a href="mailto:febryyachmad@gmail.com">febryyachmad@gmail.com</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-weight-m">Alamat</td>
+                                            <td class="text-right">Jl. Masjid Al-Huda gang baru no 130 b Kota Kediri</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-weight-m">Telephone</td>
+                                            <td class="text-right"><a href="tel:+6285851464583">+6285851464583</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2" class="font-weight-m"><i class="fa fa-circle green-marker" aria-hidden="true"></i>Available for freelance</td>
+                                        </tr>
+                                        <!--
+                                         <tr>
+                                             <td colspan="2" class="font-weight-m"><i class="fa fa-circle red-marker" aria-hidden="true"></i>Not available for freelance</td>
+                                         </tr>
+                                         <tr>
+                                             <td colspan="2" class="font-weight-m"><i class="fa fa-circle orange-marker" aria-hidden="true"></i>In vacation till septembre 29</td>
+                                         </tr>
+                                         -->
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="instagram-feed padding-block border-bottom text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <h3 class="title">Instagram Feed</h3>
+                            </div>
+                        </div>
+                        <div class="row" id="instafeed">
+                            <!-- <div class="col-xs-6 col-sm-4 col-lg-2"  >
+                                <img class="instagram-foto" src="assets/img/img-195x195.jpg" alt="Instagram Feed">
+                            </div> -->
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info border-bottom padding-block text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <h3 class="title">What i’m doing</h3>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <div class="circle-block ">
+                                    <span class="icon hover-animate"><i class="fa fa-android"></i></span>
+                                    <span class="name hover-animate">Mobile Applications</span>
+                                </div>
+                                <div class="circle-block">
+                                    <span class="icon hover-animate"><i class="fa fa-desktop"></i></span>
+                                    <span class="name hover-animate">Web design</span>
+                                </div>
+                                <div class="circle-block">
+                                    <span class="icon hover-animate"><i class="fa fa-code"></i></span>
+                                    <span class="name hover-animate">Web developer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="my-thoughts padding-block text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <h3 class="title">My thoughts</h3>
+                                <div class="animated">
+                                    <i class="fa fa-quote-left ukie-icons hover-animate"></i>
+                                </div>
+                                <p class="thoughts">Semua akan mudah jika mau belajar, ketenangan akan memberikan jawaban. Berbuat baik dan melakukannya dengan baik. </p>
+                                <h4 class="sub-title">Febri Ahmad Nurhidayat</h4>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="resume" id="navresume">
+                <header class="head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
+                                <img class="logo-page" src="./assets/img/resume_l.png" alt="Febri Ahmad Nurhidayat">
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-lg-7">
+                                <h2 class="title">Resume</h2>
+                                <h4 class="sub-title">My Academic Qualifications</h4>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="content padding-block border-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-6 padding-bottom">
+                                <h3 class="title title-resume">Pendidikan</h3>
+                                <div class="block-grey">
+                                    <div id="education-slider" class="owl-carousel owl-theme">
+                                        <!-- <div class="item">
+                                            <table>
+                                                <tr>
+                                                    <td class="font-weight-m width-td">Nama</td>
+                                                    <td>SMP Negeri 7 Kediri</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-weight-m">Alamat</td>
+                                                    <td>Jl. Ngasinan No.54, Rejomulyo, Kec. Kota Kediri, Kediri, Jawa Timur 64129</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-weight-m">Periode</td>
+                                                    <td>2010-2013</td>
+                                                </tr>
+                                            </table>
+                                        </div> -->
+                                        <div class="item">
+                                            <table>
+                                                <tr>
+                                                    <td class="font-weight-m width-td">Nama</td>
+                                                    <td>SMK TI Pelita Nusantara</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-weight-m">Alamat</td>
+                                                    <td>Gg. III No.10, Campurejo, Mojoroto, Kota Kediri, Jawa Timur 64116</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-weight-m">Periode</td>
+                                                    <td>2013-2016</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-weight-m">Jurusan</td>
+                                                    <td>Rekayasa Perangkat Lunak</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-lg-6">
+                                <h3 class="title title-resume">Pekerjaan</h3>
+                                <div class="block-grey">
+                                    <div id="work-slider" class="owl-carousel owl-theme">
+                                        <div class="item">
+                                            <table>
+                                                <tr>
+                                                    <td class="font-weight-m width-td1">Nama Perusahaan</td>
+                                                    <td>CV. Adisatya IT Consultant</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-weight-m">Alamat</td>
+                                                    <td>Jl. Pamenang IV Perum Katang A-6 RT03 RW07 Ngasem, Sukorejo, Ngasem, Kediri, Jawa Timur 64182</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-weight-m">Periode</td>
+                                                    <td>2016-2018</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="font-weight-m">Jabatan</td>
+                                                    <td>Web developer & designer, Mobile developer, Server Administrator</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="skills border-bottom padding-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-6 padding-bottom">
+                                <h3 class="title title-skills">Professional skills</h3>
+
+                                <label class="progress-bar-label">JavaScript</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">HTML &amp; CSS</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100">
+                                        <span>98%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">Python</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="89" aria-valuemin="0" aria-valuemax="100">
+                                        <span>89%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">PHP</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">SQL (SQLite, MySQL, PostgreSQL)</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">Java</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">Django (Python)</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">CodeIgniter (PHP)</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">Laravel (PHP)</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                                        <span>60%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">AngularJS (JavaScript)</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                        <span>75%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">Vue.js (JavaScript)</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="79" aria-valuemin="0" aria-valuemax="100">
+                                        <span>79%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">Cordova (Hybrid Web Application)</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+
+                                <label class="progress-bar-label">Photoshop</label>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                                        <span>70%</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-lg-6">
+                                <h3 class="title title-skills">Additional skills</h3>
+                                <div class="circle-progress-block">
+                                    <div class="circle-progress">
+                                        <input type="text" class="dial" value="60" data-color="#00b6f9" data-from="0" data-to="99" />
+                                    </div>
+                                    <label class="circle-progress-label">Communication</label>
+                                </div>
+
+                                <div class="circle-progress-block">
+                                    <div class="circle-progress">
+                                        <input type="text" class="dial" value="78" data-color="#00b6f9" data-from="0" data-to="99" />
+                                    </div>
+                                    <label class="circle-progress-label">Humor</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-6 language-skills">
+                                <h3 class="title title-skills">Language skills</h3>
+                                <div class="progress">
+                                    <label class="progress-bar-label">Bahasa Indonesia</label>
+                                    <span class="ratyli" data-rate="5" data-ratemax="5"></span>
+                                </div>
+                                <div class="progress">
+                                    <label class="progress-bar-label">Bahasa Jawa</label>
+                                    <span class="ratyli" data-rate="5" data-ratemax="5"></span>
+                                </div>
+                                <div class="progress">
+                                    <label class="progress-bar-label">English</label>
+                                    <span class="ratyli" data-rate="2" data-ratemax="5"></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-lg-6 knowledge">
+                                <h3 class="title title-skills">Knowledge</h3>
+                                <div class="col-xs-12 col-sm-6 col-lg-6">
+                                    <ul>
+                                        <li>Custom Website Design</li>
+                                        <li>Mobile Application</li>
+                                        <li>Frontend System</li>
+                                        <li>Backend System</li>
+                                        <!-- <li>Logo and Brochure Design</li>
+                                        <li>Design for Print</li>
+                                        <li>Animations and Graphics</li>
+                                        <li>Mobile websites</li> -->
+                                    </ul>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-lg-6">
+                                    <ul>
+                                        <li>Template/CMS based websites</li>
+                                        <li>Linux Web Deployment</li>
+                                        <li>Linux Server</li>
+                                        <li>Website Hosting</li>
+                                        <!-- <li>Template/CMS based websites</li>
+                                        <li>iOS and Android App</li>
+                                        <li>Website Hosting</li>
+                                        <li>Search Engine Marketing (SEM)</li> -->
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="info border-bottom padding-block text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <h3 class="title">Hobbies &amp; Interest</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <div class="circle-block ">
+                                    <span class="icon hover-animate"><i class="fa fa-futbol-o"></i></span>
+                                    <span class="name hover-animate">Football</span>
+                                </div>
+                                <div class="circle-block">
+                                    <span class="icon hover-animate"><i class="fa fa-headphones"></i></span>
+                                    <span class="name hover-animate">Music</span>
+                                </div>
+                                <div class="circle-block">
+                                    <span class="icon hover-animate"><i class="fa fa-rocket"></i></span>
+                                    <span class="name hover-animate">Travelling</span>
+                                </div>
+                                <div class="circle-block">
+                                    <span class="icon hover-animate"><i class="fa fa-car"></i></span>
+                                    <span class="name hover-animate">Cars</span>
+                                </div>
+                                <div class="circle-block">
+                                    <span class="icon hover-animate"><i class="fa fa-gamepad"></i></span>
+                                    <span class="name hover-animate">Video games</span>
+                                </div>
+                                <div class="circle-block">
+                                    <span class="icon hover-animate"><i class="fa fa-paint-brush"></i></span>
+                                    <span class="name hover-animate">Painting</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- <section class="padding-block text-center testimonials border-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <h3 class="title">Testimonials</h3>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <div class="block-grey">
+                                    <div class="slider_container">
+                                        <div class="flexslider">
+                                            <ul class="slides">
+                                                <li>
+                                                    <div class="col-xs-12 col-sm-5 col-lg-5">
+                                                        <img class="foto" src="assets/img/img-100x100.jpg" alt="Febri Ahmad Nurhidayat">
+                                                        <h4 class="sub-title">Damon Guzman</h4>
+                                                        <p>New Agency, LLC</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-7 col-lg-7 border-left border-left">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="font-weight-m width-td1">I like UkieCard</td>
+                                                                <td>August 21, 2016</td>
+                                                            </tr>
+                                                        </table>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                            veniam, quis nostrud exercitation ullamco laboris nisi.
+                                                        </p>
+                                                        <ul class="flex-direction-nav"><li><a class="prev" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li><li><a class="next" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li></ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-xs-12 col-sm-5 col-lg-5">
+                                                        <img class="foto" src="assets/img/img-100x100.jpg" alt="Febri Ahmad Nurhidayat">
+                                                        <h4 class="sub-title">Kirk Collins</h4>
+                                                        <p>New Agency, LLC</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-7 col-lg-7 border-left border-left">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="font-weight-m width-td1">New styles of home page are available</td>
+                                                                <td>August 11, 1996</td>
+                                                            </tr>
+                                                        </table>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                            veniam, quis nostrud exercitation ullamco laboris nisi.
+                                                        </p>
+                                                        <ul class="flex-direction-nav"><li><a class="prev" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li><li><a class="next" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li></ul>
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div class="col-xs-12 col-sm-5 col-lg-5">
+                                                        <img class="foto" src="assets/img/img-100x100.jpg" alt="Febri Ahmad Nurhidayat">
+                                                        <h4 class="sub-title">Melissa Hill</h4>
+                                                        <p>New Agency, LLC</p>
+                                                    </div>
+                                                    <div class="col-xs-12 col-sm-7 col-lg-7 border-left border-left">
+                                                        <table>
+                                                            <tr>
+                                                                <td class="font-weight-m width-td1">How to use ukiecard?</td>
+                                                                <td>August 18, 2000</td>
+                                                            </tr>
+                                                        </table>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed dusmod
+                                                            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                                            veniam, quis nostrud exercitation ullamco laboris nisi.
+                                                        </p>
+                                                        <ul class="flex-direction-nav"><li><a class="prev" href="#"><i class="fa fa-angle-left" aria-hidden="true"></i></a></li><li><a class="next" href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li></ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+
+                <!-- <section class="padding-block text-center clients">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <h3 class="title">Clients</h3>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <div id="owl-clients" class="owl-carousel owl-theme">
+                                    <div class="item"><img src="assets/img/client-logo.png" alt="Clients"></div>
+                                    <div class="item"><img src="assets/img/client-logo.png" alt="Clients"></div>
+                                    <div class="item"><img src="assets/img/client-logo.png" alt="Clients"></div>
+                                    <div class="item"><img src="assets/img/client-logo.png" alt="Clients"></div>
+                                    <div class="item"><img src="assets/img/client-logo.png" alt="Clients"></div>
+                                    <div class="item"><img src="assets/img/client-logo.png" alt="Clients"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section> -->
+            </div>
+
+            <div class="portfolio-header" id="navportfolio">
+                <header class="head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
+                                <img class="logo-page" src="./assets/img/portfolio_l.png" alt="Febri Ahmad Nurhidayat">
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-lg-7">
+                                <h2 class="title">Portfolio</h2>
+                                <h4 class="sub-title">Some of My Works</h4>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="portfolio-section padding-block">
+                    <div class="container">
+                        <div class="row padding-bottom">
+                            <div class="portfolio">
+                                <!-- <div class="filter_div controls">
+                                    <div class="col-xs-12 col-sm-12 col-lg-11">
+                                        <ul>
+                                            <li class="hover-animate filter" data-filter="all">All</li>
+                                            <li class="hover-animate filter" data-filter=".category-1">Web design</li>
+                                            <li class="hover-animate filter" data-filter=".category-2">Illustrations</li>
+                                            <li class="hover-animate filter" data-filter=".category-3">Applications</li>
+                                        </ul>
+                                    </div>
+                                </div> -->
+
+                                <div id="portfolio-grid">
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-2" data-value="1">
+                                        <div class="within">
+                                            <img src="assets/img/portfolio/simpatik-logo.png" alt="SIMPATIK Logo">
+                                            <div class="port-item-cont">
+                                                <h3 class="title">SIMPATIK</h3>
+                                                <p class="desc">Your Project description</p>
+                                                <a class="fancybox popup-content view-work hover-animate" href="#work-0" rel="mygallery">View details</a>
+                                            </div>
+
+                                            <div class="hidden">
+                                                <div class="podrt-desc" id="work-0">
+                                                    <div class="modal-box-content">
+                                                        <img src="assets/img/portfolio/simpatik.png" alt="SIMPATIK">
+                                                        <div class="text">
+                                                            <h3 class="title">SIMPATIK Kabupaten Kediri</h3>
+                                                            <table>
+                                                                <tr>
+                                                                    <td class="font-weight-m width-td">Completed</td>
+                                                                    <td>November 2014</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="font-weight-m">Client</td>
+                                                                    <td>Envato</td>
+                                                                </tr>
+                                                            </table>
+                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                                sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                                                laudantium, totam rem aperiamae vitae dicta sunt explicabo.</p>
+                                                            <a href="" class="btn btn-color">See Live</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-2" data-value="2">
+                                        <div class="within">
+                                            <img src="assets/img/portfolio/kabkediri-logo.png" alt="SIMPATIK Logo">
+                                            <div class="port-item-cont">
+                                                <h3 class="title">PPDB 2016 Kabupaten Kediri</h3>
+                                                <p class="desc">Your Project description</p>
+                                                <a class="fancybox popup-content view-work hover-animate" href="#work-0" rel="mygallery">View details</a>
+                                            </div>
+
+                                            <div class="hidden">
+                                                <div class="podrt-desc" id="work-0">
+                                                    <div class="modal-box-content">
+                                                        <img src="assets/img/portfolio/simpatik.png" alt="SIMPATIK">
+                                                        <div class="text">
+                                                            <h3 class="title">PPDB 2016 Kabupaten Kediri</h3>
+                                                            <table>
+                                                                <tr>
+                                                                    <td class="font-weight-m width-td">Completed</td>
+                                                                    <td>November 2014</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="font-weight-m">Client</td>
+                                                                    <td>Envato</td>
+                                                                </tr>
+                                                            </table>
+                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                                sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                                                laudantium, totam rem aperiamae vitae dicta sunt explicabo.</p>
+                                                            <a href="" class="btn btn-color">See Live</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-2" data-value="4">
+                                        <div class="within">
+                                            <img src="assets/img/portfolio/kabkediri-logo.png" alt="SIMPATIK Logo">
+                                            <div class="port-item-cont">
+                                                <h3 class="title">PPDB 2017 Kabupaten Kediri</h3>
+                                                <p class="desc">Your Project description</p>
+                                                <a class="fancybox popup-content view-work hover-animate" href="#work-0" rel="mygallery">View details</a>
+                                            </div>
+
+                                            <div class="hidden">
+                                                <div class="podrt-desc" id="work-0">
+                                                    <div class="modal-box-content">
+                                                        <img src="assets/img/portfolio/simpatik.png" alt="SIMPATIK">
+                                                        <div class="text">
+                                                            <h3 class="title">PPDB 2017 Kabupaten Kediri</h3>
+                                                            <table>
+                                                                <tr>
+                                                                    <td class="font-weight-m width-td">Completed</td>
+                                                                    <td>November 2014</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="font-weight-m">Client</td>
+                                                                    <td>Envato</td>
+                                                                </tr>
+                                                            </table>
+                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                                sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                                                laudantium, totam rem aperiamae vitae dicta sunt explicabo.</p>
+                                                            <a href="" class="btn btn-color">See Live</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-2" data-value="3">
+                                        <div class="within">
+                                            <img src="assets/img/portfolio/sijempol-logo.png" alt="SIJEMPOL Logo">
+                                            <div class="port-item-cont">
+                                                <h3 class="title">SIJEMPOL Kabupaten Tuban</h3>
+                                                <p class="desc">Your Project description</p>
+                                                <a class="fancybox popup-content view-work hover-animate" href="#work-0" rel="mygallery">View details</a>
+                                            </div>
+
+                                            <div class="hidden">
+                                                <div class="podrt-desc" id="work-0">
+                                                    <div class="modal-box-content">
+                                                        <img src="assets/img/portfolio/simpatik.png" alt="SIMPATIK">
+                                                        <div class="text">
+                                                            <h3 class="title">SIJEMPOL Kabupaten Tuban</h3>
+                                                            <table>
+                                                                <tr>
+                                                                    <td class="font-weight-m width-td">Completed</td>
+                                                                    <td>November 2014</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="font-weight-m">Client</td>
+                                                                    <td>Envato</td>
+                                                                </tr>
+                                                            </table>
+                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                                sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                                                laudantium, totam rem aperiamae vitae dicta sunt explicabo.</p>
+                                                            <a href="" class="btn btn-color">See Live</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-2" data-value="5">
+                                        <div class="within">
+                                            <img src="assets/img/portfolio/asik-logo.png" alt="SIMPATIK Logo">
+                                            <div class="port-item-cont">
+                                                <h3 class="title">ASIK Kabupaten Trenggalek</h3>
+                                                <p class="desc">Your Project description</p>
+                                                <a class="fancybox popup-content view-work hover-animate" href="#work-0" rel="mygallery">View details</a>
+                                            </div>
+
+                                            <div class="hidden">
+                                                <div class="podrt-desc" id="work-0">
+                                                    <div class="modal-box-content">
+                                                        <img src="assets/img/portfolio/simpatik.png" alt="SIMPATIK">
+                                                        <div class="text">
+                                                            <h3 class="title">SIJEMPOL Kabupaten Tuban</h3>
+                                                            <table>
+                                                                <tr>
+                                                                    <td class="font-weight-m width-td">Completed</td>
+                                                                    <td>November 2014</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="font-weight-m">Client</td>
+                                                                    <td>Envato</td>
+                                                                </tr>
+                                                            </table>
+                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                                sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                                                laudantium, totam rem aperiamae vitae dicta sunt explicabo.</p>
+                                                            <a href="" class="btn btn-color">See Live</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mix col-xs-12 col-sm-6 col-lg-4 portfolio-item category-2" data-value="5">
+                                        <div class="within">
+                                            <img src="assets/img/portfolio/simita-logo.png" alt="SIMPATIK Logo">
+                                            <div class="port-item-cont">
+                                                <h3 class="title">SIMITA Kabupaten Tuban</h3>
+                                                <p class="desc">Your Project description</p>
+                                                <a class="fancybox popup-content view-work hover-animate" href="#work-0" rel="mygallery">View details</a>
+                                            </div>
+
+                                            <div class="hidden">
+                                                <div class="podrt-desc" id="work-0">
+                                                    <div class="modal-box-content">
+                                                        <img src="assets/img/portfolio/simpatik.png" alt="SIMPATIK">
+                                                        <div class="text">
+                                                            <h3 class="title">SIMITA Kabupaten Tuban</h3>
+                                                            <table>
+                                                                <tr>
+                                                                    <td class="font-weight-m width-td">Completed</td>
+                                                                    <td>November 2014</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="font-weight-m">Client</td>
+                                                                    <td>Envato</td>
+                                                                </tr>
+                                                            </table>
+                                                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                                                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+                                                                sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                                                laudantium, totam rem aperiamae vitae dicta sunt explicabo.</p>
+                                                            <a href="" class="btn btn-color">See Live</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12 text-center btn-center">
+                                <a href="blog.html" class="btn hover-animate btn-color-hover">See all</a>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <section class="blog" id="navblog">
+                <!-- <header class="head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
+                                <img class="logo-page" src="./assets/img/blog_l.png" alt="Febri Ahmad Nurhidayat">
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-lg-7">
+                                <h2 class="title">Blog</h2>
+                                <h4 class="sub-title">I write here my thoughts</h4>
+                            </div>
+                        </div>
+                    </div>
+                </header> -->
+
+                <!-- <div class="padding-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-6">
+                                <div class="post">
+                                    <div class="photo">
+                                        <img src="assets/img/blog/post-1.png" alt="Febri Ahmad Nurhidayat">
+                                    </div>
+                                    <h3 class="title title-blog">Standard Post with Image</h3>
+                                    <div class="entry-byline">
+                                        <i class="fa fa-user"></i>
+                                        <span class="entry-author right-border">
+                                            <a href="#" title="Posts by Theme Admin" rel="author" >
+                                                <span>Febri Ahmad Nurhidayat</span>
+                                            </a>
+                                        </span>
+                                        <i class="fa fa-clock-o"></i>
+                                        <time class="entry-published right-border">30/04/2015</time>
+                                        <i class="fa fa-comment"></i>
+                                        <span class="comments-link">30 Comments</span>
+                                    </div>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                        laborum dolor.</p>
+                                    <a href="post-img.html" class="btn hover-animate btn-color-hover">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-lg-6">
+                                <div class="post last">
+                                    <div class="photo">
+                                        <img src="assets/img/blog/post-1.png" alt="Febri Ahmad Nurhidayat">
+                                    </div>
+                                    <h3 class="title title-blog">Standard Post with Image</h3>
+                                    <div class="entry-byline">
+                                        <i class="fa fa-user"></i>
+                                        <span class="entry-author right-border">
+                                            <a href="#" title="Posts by Theme Admin" rel="author" >
+                                                <span>Febri Ahmad Nurhidayat</span>
+                                            </a>
+                                        </span>
+                                        <i class="fa fa-clock-o"></i>
+                                        <time class="entry-published right-border">30/05/2015</time>
+                                        <i class="fa fa-comment"></i>
+                                        <span class="comments-link">65 Comments</span>
+                                    </div>
+                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                        laborum dolor.</p>
+                                    <a href="post-img.html" class="btn hover-animate btn-color-hover">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12 text-center btn-center">
+                                <a href="blog.html" class="btn hover-animate btn-color-hover">Blog page</a>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </section>
+
+            <div class="contact" id="navcontact">
+                <header class="head">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-5 col-lg-5 text-right">
+                                <img class="logo-page" src="./assets/img/contact_l.png" alt="Febri Ahmad Nurhidayat">
+                            </div>
+                            <div class="col-xs-12 col-sm-7 col-lg-7">
+                                <h2 class="title">Contact</h2>
+                                <h4 class="sub-title">Get in touch with me</h4>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+
+                <section class="content padding-block border-bottom">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-6 padding-bottom">
+                                <h3 class="title title-contact">Info kontak</h3>
+                                <div class="block-grey">
+                                    <table>
+                                        <tr>
+                                            <td class="font-weight-m width-td">Alamat</td>
+                                            <td>Jl. Masjid Al-Huda gang baru no 130b Kota Kediri</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-weight-m">Telephone</td>
+                                            <td><a href="tel:+6285851464583">+6285851464583</a></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="font-weight-m">E-mail</td>
+                                            <td><a href="mailto:febryyachmad@gmail.com">febryyachmad@gmail.com</a></td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-lg-6">
+                                <h3 class="title title-contact">Contact form</h3>
+                                <div class="contact-form">
+                                    <form action="assets/php/contact.php" id="contact-form" method="post">
+                                        <input type="text" id="user-name" name="user-name" value="" placeholder="Name" />
+                                        <input type="email" id="user-email" name="user-email" value="" placeholder="Email" />
+                                        <input type="hidden" id="user-status" name="user-status" value="1"  />
+                                        <textarea id="user-message" name="user-message" placeholder="Message"></textarea>
+                                        <div class="footer-form">
+                                            <input type="submit" id="submit-btn" class="btn btn-color hover-animate"  value="Send Message" />
+                                            <div class="info-message-form">
+                                                <p>Please fill out all the fields!</p>
+                                                <span class="close-msg"><i class="fa fa-close"></i></span>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+                <!-- <div class="contact-map padding-block text-center">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-lg-12">
+                                <div id="map" class="map"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+                        <!-- <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <a href="#" class="hover-animate">
+                                <span class="ukie-icons hover-animate"><i class="fa fa-phone"></i></span> +38 012-3456-7890
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <a href="#" class="hover-animate">
+                                <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> info@yourdomain.com
+                            </a>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-lg-3">
+                            <a href="#" class="hover-animate">
+                                <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> 44 King St, Melbourne VIC
+                            </a>
+                        </div> -->
+                        <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
+                            <span class="copyright">Copyright © 2018 All right reserved</span>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <a href="#" class="btn hover-animate scrollToTop"><i class="fa fa-angle-up"></i></a>
+
+    <!-- delete this from site once you have decided on a colour scheme - follow documentation for insructions -->
+    <div class="style-switcher style-off">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12 text-center">
+                <div class="switch-colours clearfix">
+                    <div class="set clearfix">
+                        <h3 class="lighter">Select A Color</h3>
+                        <a href="color-blue" class="new-colour color-blue" id="color-blue" data-color="#00b6f9"></a>
+                        <a href="color-orange" class="new-colour color-orange" id="color-orange" data-color="#ffc400"></a>
+                        <a href="color-purple" class="new-colour color-purple" id="color-purple" data-color="#7c4dff"></a>
+                        <a href="color-green" class="new-colour color-green" id="color-green" data-color="#9ccc65"></a>
+                        <a href="color-red" class="new-colour color-red" id="color-red" data-color="#ff7043"></a>
+                        <a href="color-brown" class="new-colour color-brown" id="color-brown" data-color="#ae8c64"></a>
+
+                        <h3 class="lighter">Select A Background</h3>
+                        <a href="bg-white" class="new-bg bg-white" data-bg="#ffffff"></a>
+                        <a href="bg-grey" class="new-bg bg-grey" data-bg="#f5f5f5"></a>
+                        <a href="bg-light-blue" class="new-bg bg-light-blue" data-bg="#cfd8dc"></a>
+                        <a href="bg-dark-blue" class="new-bg bg-dark-blue" data-bg="#263238"></a>
+                        <a href="bg-dark-purple" class="new-bg bg-dark-purple" data-bg="#1e1f38"></a>
+                        <a href="bg-brown" class="new-bg bg-brown" data-bg="#383231"></a>
+
+                        <h3 class="lighter">Select A Shadow</h3>
+
+                        <div class="switch">
+                            <input type="checkbox" name="box_shadow" id="box_shadow">
+                            <label><i></i></label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="style-open">
+                    <i class="fa fa-tint"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="style-open-form animated hi-icon-effect-8">
+        <i class="hi-icon fa fa-envelope-o ukie-icons hover-animate hi-icon-mobile"></i>
+    </div>
+    <div class="style-contact-form style-off-form">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-lg-12 ">
+                <div class="contact-form">
+                    <div class="btn-close-form">
+                    </div>
+                    <h3 class="title title-contact">Contact Me</h3>
+                    <p>Use this form to tell me about your project goals and needs. I will be in touch within 24 hours.</p>
+                    <form action="assets/php/contact.php" id="contact-form-panel" method="post">
+                        <input type="text" id="user-name-panel" name="user-name" value="" placeholder="Name" />
+                        <input type="email" id="user-email-panel" name="user-email" value="" placeholder="Email" />
+                        <input type="hidden" id="user-status-panel" name="user-status" value="1"  />
+                        <textarea id="user-message-panel" name="user-message" placeholder="Message"></textarea>
+                        <div class="footer-form">
+                            <input type="submit" id="submit-btn-panel" class="btn btn-color hover-animate"  value="Send Message" />
+                            <div class="info-message-form">
+                                <p>Please fill out all the fields!</p>
+                                <span class="close-msg"><i class="fa fa-close"></i></span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+    <script src="assets/boostrap-files/js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.appear.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.mixitup.min.js" type="text/javascript"></script>
+    <script src="assets/js/owl.carousel.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.inview.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.knob.min.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.countTo.js" type="text/javascript"></script>
+    <script src="assets/fancybox/lib/jquery.mousewheel-3.0.6.pack.js" type="text/javascript" ></script>
+    <script src="assets/fancybox/source/jquery.fancybox.pack.js?v=2.1.5" type="text/javascript" ></script>
+    <script src="assets/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5" type="text/javascript"></script>
+    <script src="assets/js/portfolio_scripts.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.ratyli.js" type="text/javascript"></script>
+    <script src="assets/js/stickUp.js" type="text/javascript"></script>
+    <script src="assets/js/modernizr.custom.js" type="text/javascript"></script>
+    <script src="assets/js/prefixfree.min.js" type="text/javascript"></script>
+    <script src="assets/js/modernizr.js" type="text/javascript"></script>
+    <script src="assets/js/jquery.calendario.js" type="text/javascript"></script>
+    <script src="assets/js/contact_scripts.js" type="text/javascript"></script>
+    <!-- <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD1J4h7Xqzd51GMRYG0OS8gPJpJMXC1MCE&callback=map"></script> -->
+    <script src="assets/js/scripts.js" type="text/javascript"></script>
+    <script src="assets/js/instafeed.min.js"></script>
+    <script type="text/javascript">
+        // var feed = new Instafeed({
+        //     get: 'user',
+        //     userId: '3239205957',
+        //     accessToken: '8312ae8ef96d4eee8fe3ceab6df8310b',
+        //     // tagName: 'newyears',
+        //     // resolution: 'low_resolution'
+        // });
+
+        var feed = new Instafeed({
+            get: 'user',
+            // tagName: 'aitc',
+            userId: '3239205957',
+            // clientId: 'ba6185e.8312ae8ef96d4eee8fe3ceab6df8310b',
+            accessToken: '3239205957.ba6185e.8312ae8ef96d4eee8fe3ceab6df8310b',
+            // template: '<a href="{{link}}"><img src="{{image}}" /></a>',
+            template: '<div class="col-xs-6 col-sm-4 col-lg-2"><a href="{{link}}"><img class="instagram-foto" src="{{image}}" alt="Instagram Feed"></a></div>',
+            resolution: 'thumbnail',
+            limit: 18,
+            // filter: function(image) {
+            //     return image.tags.indexOf('somehashtag') >= 0;
+            // }
+        });
+        feed.run();
+    </script>
+</body>
+</html>
