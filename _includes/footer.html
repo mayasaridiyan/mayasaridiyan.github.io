@@ -1,44 +1,24 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          {% if site.gitlab_username %}
-          <li>
-            {% include icon-gitlab.html username=site.gitlab_username %}
-          </li>
-          {% endif %}
-
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
-
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
-      </div>
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <a href="#" class="hover-animate">
+                    <span class="ukie-icons hover-animate"><i class="fa fa-phone"></i></span> +6285851464583
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <a href="#" class="hover-animate">
+                    <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> febriahmadn@gmail.com
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3">
+                <a href="#" class="hover-animate">
+                    <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> Kediri, Indonesia
+                </a>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
+                <span class="copyright">Copyright © 2024</span>
+            </div>
+        </div>
     </div>
-
-  </div>
-
 </footer>

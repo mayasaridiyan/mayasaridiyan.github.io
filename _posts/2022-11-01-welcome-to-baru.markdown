@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Bill Raymond
+author: febriahmadn
 title:  "Welcome to Jekyll! 1"
 date: 2022-11-01
 categories: blog update

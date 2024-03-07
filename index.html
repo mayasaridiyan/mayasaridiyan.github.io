@@ -96,12 +96,12 @@ layout: default
                                 <span class="name">Portfolio</span>
                             </a>
 
-                            <!-- <a href="#navblog" class="menu-li">
+                            <a href="/blogs" class="menu-li">
                                 <span class="foto">
                                     <img src="./assets/img/menu/style1/blog.png" class="menu-img" data-img-name="blog" alt="Febri Ahmad Nurhidayat">
                                 </span>
                                 <span class="name">Blog</span>
-                            </a> -->
+                            </a>
 
                             <a href="#navcontact" class="menu-li">
                                 <span class="foto">
@@ -927,9 +927,9 @@ layout: default
                             <div class="post">
                                 <div class="photo">
                                     {% if post.thumbnail %}
-                                    <img src="{{post.thumbnail}}" alt="{{ post.title }}">
+                                    <img src="{{post.thumbnail}}" alt="{{ post.title }}" style="height: 350px; object-fit: cover;">
                                     {% else %}
-                                    <img src="assets/img/blog/post-1.png" alt="Febri Ahmad Nurhidayat">
+                                    <img src="assets/img/blog/post-1.png" alt="{{ post.author }}" style="height: 350px; object-fit: cover;">
                                     {% endif %}
                                 </div>
                                 <h3 class="title title-blog">{{ post.title }}</h3>
@@ -954,7 +954,7 @@ layout: default
 
                     <div class="row">
                         <div class="col-xs-12 col-sm-12 col-lg-12 text-center btn-center">
-                            <a href="blog.html" class="btn hover-animate btn-color-hover">Blog page</a>
+                            <a href="/blogs" class="btn hover-animate btn-color-hover">Blog page</a>
                         </div>
                     </div>
                 </div>
@@ -1037,71 +1037,12 @@ layout: default
             </div> -->
         </div>
 
-        <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-6 col-lg-3">
-                        <a href="#" class="hover-animate">
-                            <span class="ukie-icons hover-animate"><i class="fa fa-phone"></i></span> +6285851464583
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3">
-                        <a href="#" class="hover-animate">
-                            <span class="ukie-icons hover-animate"><i class="fa fa-paper-plane"></i></span> febriahmadn@gmail.com
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3">
-                        <a href="#" class="hover-animate">
-                            <span class="ukie-icons hover-animate"><i class="fa fa-map-marker"></i></span> Kediri, Indonesia
-                        </a>
-                    </div>
-                    <div class="col-xs-12 col-sm-6 col-lg-3 text-right">
-                        <span class="copyright">Copyright © 2024</span>
-                    </div>
-                </div>
-            </div>
-        </footer>
+        {% include footer.html %}
     </div>
 </div>
 
-<a href="#" class="btn hover-animate scrollToTop"><i class="fa fa-angle-up"></i></a>
 
-<!-- delete this from site once you have decided on a colour scheme - follow documentation for insructions -->
-<div class="style-switcher style-off">
-    <div class="row">
-        <div class="col-xs-12 col-sm-12 col-lg-12 text-center">
-            <div class="switch-colours clearfix">
-                <div class="set clearfix">
-                    <h3 class="lighter">Select A Color</h3>
-                    <a href="color-blue" class="new-colour color-blue" id="color-blue" data-color="#00b6f9"></a>
-                    <a href="color-orange" class="new-colour color-orange" id="color-orange" data-color="#ffc400"></a>
-                    <a href="color-purple" class="new-colour color-purple" id="color-purple" data-color="#7c4dff"></a>
-                    <a href="color-green" class="new-colour color-green" id="color-green" data-color="#9ccc65"></a>
-                    <a href="color-red" class="new-colour color-red" id="color-red" data-color="#ff7043"></a>
-                    <a href="color-brown" class="new-colour color-brown" id="color-brown" data-color="#ae8c64"></a>
 
-                    <h3 class="lighter">Select A Background</h3>
-                    <a href="bg-white" class="new-bg bg-white" data-bg="#ffffff"></a>
-                    <a href="bg-grey" class="new-bg bg-grey" data-bg="#f5f5f5"></a>
-                    <a href="bg-light-blue" class="new-bg bg-light-blue" data-bg="#cfd8dc"></a>
-                    <a href="bg-dark-blue" class="new-bg bg-dark-blue" data-bg="#263238"></a>
-                    <a href="bg-dark-purple" class="new-bg bg-dark-purple" data-bg="#1e1f38"></a>
-                    <a href="bg-brown" class="new-bg bg-brown" data-bg="#383231"></a>
 
-                    <h3 class="lighter">Select A Shadow</h3>
-
-                    <div class="switch">
-                        <input type="checkbox" name="box_shadow" id="box_shadow">
-                        <label><i></i></label>
-                    </div>
-                </div>
-            </div>
-
-            <div class="style-open">
-                <i class="fa fa-tint"></i>
-            </div>
-        </div>
-    </div>
-</div>
 
 

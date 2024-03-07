@@ -74,6 +74,8 @@ pages:
 
 To work locally with this project, you'll have to follow the steps below:
 
+1. auto build `jekyll build --verbose --watch`
+
 1. Fork, clone or download this project
 1. [Install][] Jekyll
 1. Download dependencies: `bundle`

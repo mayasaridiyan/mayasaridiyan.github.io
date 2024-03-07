@@ -1,0 +1,166 @@
+---
+layout: default
+---
+
+<div id="wraper">
+
+    <!-- Start Head section -->
+    <header class="head-blog">
+        <div class="slider_container">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <div class="head">
+                            <!-- start container -->
+                            <div class="container">
+                                <!-- start row -->
+                                <div class="row">
+                                    <div class="col-xs-8 col-sm-10 col-lg-10">
+                                        <img class="logo-page" src="./assets/img/blog_l.png" alt="Ukieweb">
+                                        <!-- Title Page -->
+                                        <h2 class="title">Blog</h2>
+                                        <!-- Description Page -->
+                                        <h4 class="sub-title">I write here my thoughts</h4>
+                                    </div>
+                                    <div class="col-xs-2 col-sm-1 col-lg-1 text-right">
+                                        <ul class="flex-direction-nav"><li><a class="next" href="#"></a></li></ul>
+                                    </div>
+                                    <div class="col-xs-2 col-sm-1 col-lg-1 text-right">
+                                        <a href="/" class="btn-close hover-animate"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="head search-head search-blog">
+                            <!-- start container -->
+                            <div class="container">
+                                <!-- start row -->
+                                <div class="row">
+                                    <div class="col-xs-10 col-sm-11 col-lg-11">
+                                        <form action="" method="">
+                                            <input type="text" name="search" class="search-input" placeholder="Search" value="" />
+                                            <input type="submit" class="btn-search" value="" />
+                                        </form>
+                                    </div>
+                                    <div class="col-xs-2 col-sm-1 col-lg-1 text-right">
+                                        <ul class="flex-direction-nav"><li><a class="prev" href="#"></a></li></ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Start Blog section -->
+    <section class="blog padding-block">
+        <!-- start container -->
+        <div class="container">
+            <!-- start row -->
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-lg-8 padding-bottom">
+                    {% for post in site.posts %}
+                    <!-- start post -->
+                    <div class="post">
+                        <!-- start photo -->
+                        <div class="photo">
+                            {% if post.thumbnail %}
+                            <img src="{{post.thumbnail}}" alt="{{ post.title }}">
+                            {% else %}
+                            <img src="assets/img/blog/post-1.png" alt="Febri Ahmad Nurhidayat">
+                            {% endif %}
+                        </div>
+                        <!-- end photo -->
+                        <!-- start title post -->
+                        <h3 class="title title-blog">{{ post.title }}</h3>
+                        <!-- end title post -->
+                        <div class="entry-byline">
+                            <i class="fa fa-user"></i>
+                            <span class="entry-author right-border">
+                                <a href="#" title="Posts by Theme Admin" rel="author" >
+                                    <span>{{ post.author }}</span>
+                                </a>
+                            </span>
+                            <i class="fa fa-clock-o"></i>
+                            <time class="entry-published right-border">{{ post.date | date: "%b %-d, %Y" }}</time>
+                            <i class="fa fa-comment"></i>
+                            <!-- <span class="comments-link">30 Comments</span> -->
+                        </div>
+                        <!-- start desc post -->
+                        <p>{{post.excerpt}}</p>
+                        <!-- end desc post -->
+                        <a href="{{ post.url | prepend: site.baseurl }}" class="btn hover-animate btn-color-hover">Read More</a>
+                    </div>
+                    <!-- end post -->
+                    {% endfor %}
+
+                    <!-- start pagination -->
+                    <div class="pagination">
+                        <span class="page-numbers current">1</span>
+                        <a class="page-numbers" href="#">2</a>
+                        <a class="page-numbers" href="#">3</a>
+                        <span class="page-numbers dots">…</span>
+                        <a class="page-numbers" href="#">9</a>
+                        <a class="next page-numbers" href="#">Next »</a>
+                    </div>
+                    <!-- end pagination -->
+                </div>
+                <div class="col-xs-12 col-sm-12 col-lg-4">
+                    <!-- start slidebar -->
+
+                    <aside class="widget widget_categories">
+                        <h3 class="widget-title">Categories</h3>
+                        <ul>
+                            <li class="cat-item cat-item-6"><a href="#">Web design</a></li>
+                            <li class="cat-item cat-item-8"><a href="#">Web development</a></li>
+                            <li class="cat-item cat-item-7"><a href="#">Logos & Illustrations</a></li>
+                            <li class="cat-item cat-item-1"><a href="#">Marketing</a></li>
+                        </ul>
+                    </aside>
+
+                    <aside class="widget widget_recent_entries">
+                        <h3 class="widget-title">Recent Posts</h3>
+                        <ul>
+                            <li><a href="#">Excepteur sint occaecat cupidatat non proident</a></li>
+                            <li><a href="#">Duis aute irure dolor in reprehenderit</a></li>
+                            <li><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor</a></li>
+                        </ul>
+                    </aside>
+
+                    <aside class="widget widget_archive">
+                        <h3 class="widget-title">Archives</h3>
+                        <ul>
+                            <li><a href="#">October 2014</a></li>
+                            <li><a href="#">September 2014</a></li>
+                            <li><a href="#">June 2014</a></li>
+                        </ul>
+                    </aside>
+
+                    <aside class="widget widget_tag_cloud">
+                        <h3 class="widget-title">Tags</h3>
+                        <div class="tagcloud">
+                            <a href="#" class="hover-animate">Web</a>
+                            <a href="#" class="hover-animate">Illustrations</a>
+                            <a href="#" class="hover-animate">Graphic design</a>
+                            <a href="#" class="hover-animate">Applications</a>
+                            <a href="#" class="hover-animate">Photo</a>
+                            <a href="#" class="hover-animate">UkieWeb</a>
+                        </div>
+                    </aside>
+
+                    <!-- end slidebar -->
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </section>
+    <!-- End Blog section -->
+
+    {% include footer.html %}
+
+</div>

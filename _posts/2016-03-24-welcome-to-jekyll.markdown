@@ -1,6 +1,6 @@
 ---
 layout: post
-author: Bill Raymond
+author: febriahmadn
 title:  "Welcome to Jekyll!"
 date:   2016-03-24 15:32:14 -0300
 categories: blog update
