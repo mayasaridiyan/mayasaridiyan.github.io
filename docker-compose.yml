@@ -1,14 +1,14 @@
 version: '3.7'
 
 services:
-  febriahmadn:
+  diyanfebri:
     build: 
       context: .
     command: sh -c "bundle exec jekyll serve --trace --incremental"
     expose:
       - 4000
     volumes:
-      - .:/febriahmadn
+      - .:/diyanfebri
   
   nginx:
     build: ./nginx
@@ -17,4 +17,4 @@ services:
     ports:
       - 4000:80
     depends_on:
-      - febriahmadn
+      - diyanfebri
