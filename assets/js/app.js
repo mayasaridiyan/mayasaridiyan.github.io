@@ -223,7 +223,7 @@ const util = (() => {
             origin: { y: 0.9 },
             zIndex: 1057
         });
-        await session.check();
+        // await session.check();
         animation();
     };
 
