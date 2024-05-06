@@ -329,7 +329,7 @@ const pagination = (() => {
         button.disabled = true;
         button.innerHTML = `<span class="spinner-border spinner-border-sm me-1"></span>Loading...`;
         // await comment.ucapan();
-        document.getElementById('daftar-ucapan').scrollIntoView({ behavior: 'smooth' });
+        document.getElementById('daftar-ucapan-new').scrollIntoView({ behavior: 'smooth' });
         button.disabled = false;
         button.innerHTML = tmp;
     };
@@ -496,6 +496,7 @@ const comment = (() => {
 
     const formKehadiran = document.getElementById('form-kehadiran');
     const formNama = document.getElementById('form-nama');
+    const formEmail = document.getElementById('form-email');
     const formPesan = document.getElementById('form-pesan');
 
     const owns = storage('owns');
@@ -525,16 +526,19 @@ const comment = (() => {
         formKehadiran.style.display = 'block';
 
         formNama.value = null;
+        formEmail.value = null;
         formKehadiran.value = 0;
         formPesan.value = null;
 
         formNama.disabled = false;
+        formEmail.disabled = false;
         formKehadiran.disabled = false;
         formPesan.disabled = false;
     };
 
     const kirim = async () => {
         let nama = formNama.value;
+        let emailInput = formEmail.value;
         let hadir = parseInt(formKehadiran.value);
         let komentar = formPesan.value;
         // let token = localStorage.getItem('token') ?? '';
@@ -566,6 +570,7 @@ const comment = (() => {
         }
 
         formNama.disabled = true;
+        formEmail.disabled = true;
         formKehadiran.disabled = true;
         formPesan.disabled = true;
         buttonKirim.disabled = true;
@@ -573,22 +578,21 @@ const comment = (() => {
         let tmp = buttonKirim.innerHTML;
         buttonKirim.innerHTML = loader;
 
-        let isSuccess = false;
+        let isSuccess = true;
         const { error } = await _supabase
         .from('chats')
         .insert({ 
             name: nama, 
-            email: 'febriahmadn@gmail.com',
+            email: emailInput,
             is_hadir: hadir == 1,
             text: komentar
         })
 
         if (error) {
             isSuccess = false;
-            return;
         }
 
-        isSuccess = true;
+        
         fetchData()
         // await request('POST', '/api/comment')
         //     .token(token)
@@ -607,15 +611,16 @@ const comment = (() => {
         //         alert(`Terdapat kesalahan: ${err}`);
         //     });
 
-        // if (isSuccess) {
+        if (isSuccess) {
         //     await pagination.reset();
-        //     document.getElementById('daftar-ucapan').scrollIntoView({ behavior: 'smooth' });
-        //     resetForm();
-        // }
+            document.getElementById('daftar-ucapan-new').scrollIntoView({ behavior: 'smooth' });
+            resetForm();
+        }
 
         buttonKirim.disabled = false;
         buttonKirim.innerHTML = tmp;
         formNama.disabled = false;
+        formEmail.disabled = false;
         formKehadiran.disabled = false;
         formPesan.disabled = false;
     };
